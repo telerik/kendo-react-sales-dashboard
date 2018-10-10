@@ -5,17 +5,24 @@ import {
   ChartLegend,
   ChartSeries,
   ChartSeriesItem,
-  ChartSeriesLabels
+  ChartSeriesLabels,
+  ChartTooltip,
+  ChartSeriesItemTooltip
 } from '@progress/kendo-react-charts';
 
-import { donutChartData } from '../data/appData';
+const labelContent = (e) => (Math.floor(e.value*100));
+const tooltipContent = (e) => {
+  if(e.point){
+    return e.point.category
+  }
+}
 
-const labelContent = (e) => (e.category);
-
-export const DonutChartContainer = () => (
+export const DonutChartContainer = (props) => (
   <Chart style={{height:300}}>
+    <ChartTooltip />
     <ChartSeries>
-      <ChartSeriesItem type="donut" data={donutChartData} categoryField="kind" field="share" padding={0}>
+      <ChartSeriesItem type="donut" data={props.data} categoryField="kind" field="share" padding={0}>
+        <ChartSeriesItemTooltip render={tooltipContent}/>
         <ChartSeriesLabels color="#fff" background="none" content={labelContent} />
       </ChartSeriesItem>
     </ChartSeries>
