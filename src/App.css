@@ -64,6 +64,7 @@
     font-size: .7rem;
     color: inherit;
 }
+
 #homepage-app-demo .teamMate img {
     display: inline-block;
     vertical-align: top;
@@ -83,4 +84,8 @@
 }
 #homepage-app-demo .project-item {
   padding:0.5em 2em;
+}
+
+.k-chart-tooltip p {
+  margin: 0;
 }
