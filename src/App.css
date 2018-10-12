@@ -37,7 +37,7 @@
 }
 
 #homepage-app-demo .teamMate:hover {
-  background-color: #efefef;
+  background-color: rgba(0,0,0,.07);
 }
 
 #homepage-app-demo .teamMate.k-state-selected {
