@@ -36,6 +36,15 @@
   cursor: pointer;
 }
 
+#homepage-app-demo .teamMate:hover {
+  background-color: #efefef;
+}
+
+#homepage-app-demo .teamMate.k-state-selected {
+  color: #fff;
+  background-color: #3f51b5;
+}
+
 #homepage-app-demo .teamMate:after {
     content: ".";
     display: block;
