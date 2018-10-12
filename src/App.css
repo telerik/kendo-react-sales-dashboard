@@ -85,6 +85,9 @@
 #homepage-app-demo .project-item {
   padding:0.5em 2em;
 }
+#homepage-app-demo a.k-link {
+  font-size: 12px;
+}
 
 .k-chart-tooltip p {
   margin: 0;
