@@ -1,64 +1,42 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-h1 {
+#homepage-app-demo h1 {
   color:rgb(63, 81, 181);
   font-weight: bold;
+  font-size: 2rem;
 }
 
-.buttons-right>button {
+#homepage-app-demo .buttons-right>button {
   float: right;
   margin: 5px;
 }
 
-.app-container {
+#homepage-app-demo {
   padding: 25px;
+  position: relative;
 }
 
-.percentage-number {
+#homepage-app-demo .percentage-number {
   color: rgb(63, 81, 181);
   font-size: 50px;
   font-weight: bold;
 }
 
-.percentage-sign {
+#homepage-app-demo .percentage-sign {
   color: rgb(63, 81, 181);
   font-size: 40px;
 }
 
-.percentage-container {
+#homepage-app-demo .percentage-container {
   text-align: center;
 }
-.percentage-container:first-child {
+#homepage-app-demo .percentage-container:first-child {
   padding-bottom: 3em;
 }
-.teamMate:after {
+
+#homepage-app-demo .teamMate {
+  cursor: pointer;
+}
+
+#homepage-app-demo .teamMate:after {
     content: ".";
     display: block;
     height: 0;
@@ -66,17 +44,18 @@ h1 {
     clear: both;
     visibility: hidden;
 }
-.teamMate h2 {
-    font-size: 1.3em;
+#homepage-app-demo .teamMate h2 {
+    font-size: 1rem;
     font-weight: normal;
     padding-top: 17px;
     margin: 0;
 }
-.teamMate p {
+#homepage-app-demo .teamMate p {
     margin: 0;
-    font-size: .8em;
+    font-size: .7rem;
+    color: inherit;
 }
-.teamMate img {
+#homepage-app-demo .teamMate img {
     display: inline-block;
     vertical-align: top;
     width: 50px;
@@ -85,14 +64,14 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 50%;
 }
-.mate-info {
+#homepage-app-demo .mate-info {
     display: inline-block;
     vertical-align: top;
 }
-.panelbar-wrapper {
+#homepage-app-demo .panelbar-wrapper {
     max-width: 300px;
     margin: 0 auto;
 }
-.project-item {
+#homepage-app-demo .project-item {
   padding:0.5em 2em;
 }

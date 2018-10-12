@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('homepage-app-demo'));
-registerServiceWorker();
+function renderAwesomeExample() {
+    ReactDOM.render(
+        <App />,
+        document.getElementById('homepage-app-demo')
+    );
+}
+
+window.renderAwesomeExample = renderAwesomeExample;

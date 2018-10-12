@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
 import './App.css';
 
 import GridContainer from './components/GridContainer'
@@ -29,7 +28,7 @@ class App extends Component {
       barChartCategories: barChartCategories
     }
     handlePDFExport = (e) =>{
-      savePDF(ReactDOM.findDOMNode(this.app), { paperSize: 'auto' });
+      savePDF(this.app, { paperSize: 'auto' });
     }
 
     handleShare = () => {
@@ -83,14 +82,14 @@ class App extends Component {
         let headerText = this.state.value.replace('Sales','');
         return (
           <Ripple>
+            <div className="buttons-right">
+              <Button primary={true} onClick={this.handleShare}>Share</Button>
+              <Button onClick={this.handlePDFExport}>Export to PDF</Button>
+            </div>
             <div className="app-container" ref={(app) => this.app = app}>
                 <div className="row">
                   <div className="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
                     <h1>Sales | {headerText}</h1>
-                  </div>
-                  <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 buttons-right">
-                    <Button primary={true} onClick={this.handleShare}>Share</Button>
-                    <Button onClick={this.handlePDFExport}>Export to PDF</Button>
                   </div>
                 </div>
                 <div className="row">

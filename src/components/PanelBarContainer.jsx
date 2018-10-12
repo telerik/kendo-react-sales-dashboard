@@ -2,7 +2,7 @@ import React from 'react';
 import { PanelBar, PanelBarItem } from '@progress/kendo-react-layout';
 export default class PanelBarContainer extends React.Component {
     imageUrl(imageName) {
-        return "img/" + imageName + '.jpg';
+        return window.baseUrl + "/images/k3-sample-app/" + imageName + '.png';
     }
 
     handleItemClick = (element) => {
@@ -15,7 +15,7 @@ export default class PanelBarContainer extends React.Component {
     }
     render(){
         return (
-                <PanelBar >
+                <PanelBar expandMode="single">
                     <PanelBarItem expanded={true} title="Teammates">
                         <div>
                             <div className="teamMate k-state-selected" id="Andrew Fuller" onClick={(e) =>{ this.handleItemClick("Andrew Fuller")}}>
