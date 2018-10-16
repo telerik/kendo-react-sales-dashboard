@@ -16,12 +16,14 @@
     "@progress/kendo-react-layout": "^2.0.0",
     "@progress/kendo-react-pdf": "^2.0.0",
     "@progress/kendo-react-ripple": "^2.0.0",
-    "@progress/kendo-theme-default": "^2.56.0",
-    "@progress/kendo-theme-material": "dev",
     "hammerjs": "^2.0.8",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-scripts": "1.1.5"
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "react-scripts": "1.1.5",
+    "@progress/kendo-theme-default": "^2.56.0",
+    "@progress/kendo-theme-material": "dev"
   },
   "scripts": {
     "start": "react-scripts start",
