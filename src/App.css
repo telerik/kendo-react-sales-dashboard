@@ -1,51 +1,55 @@
-#homepage-app-demo h1 {
+#homepage #homepage-app-demo {
+  text-align: left;
+}
+
+#homepage #homepage-app-demo h1 {
   color:rgb(63, 81, 181);
   font-weight: bold;
   font-size: 2rem;
 }
 
-#homepage-app-demo .buttons-right>button {
+#homepage #homepage-app-demo .buttons-right>button {
   float: right;
   margin: 5px;
 }
 
-#homepage-app-demo {
+#homepage #homepage-app-demo {
   padding: 25px;
   position: relative;
 }
 
-#homepage-app-demo .percentage-number {
+#homepage #homepage-app-demo .percentage-number {
   color: rgb(63, 81, 181);
   font-size: 50px;
   font-weight: bold;
 }
 
-#homepage-app-demo .percentage-sign {
+#homepage #homepage-app-demo .percentage-sign {
   color: rgb(63, 81, 181);
   font-size: 40px;
 }
 
-#homepage-app-demo .percentage-container {
+#homepage #homepage-app-demo .percentage-container {
   text-align: center;
 }
-#homepage-app-demo .percentage-container:first-child {
+#homepage #homepage-app-demo .percentage-container:first-child {
   padding-bottom: 3em;
 }
 
-#homepage-app-demo .teamMate {
+#homepage #homepage-app-demo .teamMate {
   cursor: pointer;
 }
 
-#homepage-app-demo .teamMate:hover {
+#homepage #homepage-app-demo .teamMate:hover {
   background-color: rgba(0,0,0,.07);
 }
 
-#homepage-app-demo .teamMate.k-state-selected {
+#homepage #homepage-app-demo .teamMate.k-state-selected {
   color: #fff;
   background-color: #3f51b5;
 }
 
-#homepage-app-demo .teamMate:after {
+#homepage #homepage-app-demo .teamMate:after {
     content: ".";
     display: block;
     height: 0;
@@ -53,19 +57,19 @@
     clear: both;
     visibility: hidden;
 }
-#homepage-app-demo .teamMate h2 {
+#homepage #homepage-app-demo .teamMate h2 {
     font-size: 1rem;
     font-weight: normal;
     padding-top: 17px;
     margin: 0;
 }
-#homepage-app-demo .teamMate p {
+#homepage #homepage-app-demo .teamMate p {
     margin: 0;
     font-size: .7rem;
     color: inherit;
 }
 
-#homepage-app-demo .teamMate img {
+#homepage #homepage-app-demo .teamMate img {
     display: inline-block;
     vertical-align: top;
     width: 50px;
@@ -74,18 +78,18 @@
     border: 1px solid #ccc;
     border-radius: 50%;
 }
-#homepage-app-demo .mate-info {
+#homepage #homepage-app-demo .mate-info {
     display: inline-block;
     vertical-align: top;
 }
-#homepage-app-demo .panelbar-wrapper {
+#homepage #homepage-app-demo .panelbar-wrapper {
     max-width: 300px;
     margin: 0 auto;
 }
-#homepage-app-demo .project-item {
+#homepage #homepage-app-demo .project-item {
   padding:0.5em 2em;
 }
-#homepage-app-demo a.k-link {
+#homepage #homepage-app-demo a.k-link {
   font-size: 12px;
 }
 

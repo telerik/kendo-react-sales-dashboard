@@ -14,7 +14,7 @@ import {
 
 
 export const BarChartContainer = (props) => (
-    <Chart style={{height:300}}>
+    <Chart style={{height:300}} zoomable={false}>
         <ChartTooltip />
         <ChartLegend visible={false} />
         <ChartCategoryAxis>
