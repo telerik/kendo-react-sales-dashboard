@@ -29,8 +29,8 @@ export const BarChartContainer = (props) => (
                     name={item.name}
                 />))}
         </ChartSeries>
-        <ChartValueAxis skip={2}>
-                <ChartValueAxisItem skip={2}/>
+        <ChartValueAxis>
+                <ChartValueAxisItem/>
         </ChartValueAxis>
     </Chart>
 );

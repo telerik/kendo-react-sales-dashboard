@@ -83,7 +83,7 @@ class App extends Component {
         return (
           <Ripple>
             <div className="buttons-right">
-              <Button primary={true} onClick={this.handleShare}>Share</Button>
+              <Button primary={true} onClick={this.handleShare} className='mr-2'>Share</Button>
               <Button onClick={this.handlePDFExport}>Export to PDF</Button>
             </div>
             <div className="app-container" ref={(app) => this.app = app}>
