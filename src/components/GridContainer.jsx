@@ -31,7 +31,7 @@ export default class GridContainer extends React.Component {
 
     handleDataStateChange = (e) => {
         this.setState({
-            dataState:e.data
+            dataState: e.dataState
         })
     }
 
@@ -47,7 +47,7 @@ export default class GridContainer extends React.Component {
                 >
                     <Column field="ProductID" title="ID" sortable={false} width="40px"/>
                     <Column field="ProductName" title="Name" />
-                    <Column field="UnitPrice" title="Price" width="100px"/>
+                    <Column field="UnitPrice" title="Price" width="100px" />
                     <Column field="UnitsInStock" title="In stock"  sortable={false} width="100px"/>
                     <Column field="PriceHistory" title="Price history" cell={SparkLineChartCell}sortable={false} width="200px"/>
                     <Column field="Discontinued" title="Active" sortable={false} width="100px"

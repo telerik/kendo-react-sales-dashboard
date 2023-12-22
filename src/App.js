@@ -82,8 +82,8 @@ class App extends Component {
         let headerText = this.state.value.replace('Sales','');
         return (
           <Ripple>
-            <div className="buttons-right">
-              <Button primary={true} onClick={this.handleShare}>Share</Button>
+            <div className="buttons-right mt-1">
+              <Button themeColor={'primary'} onClick={this.handleShare} className='mr-2'>Share</Button>
               <Button onClick={this.handlePDFExport}>Export to PDF</Button>
             </div>
             <div className="app-container" ref={(app) => this.app = app}>
@@ -128,7 +128,7 @@ class App extends Component {
                   <p>Please enter the email address/es of the recipient/s.</p>
                   <Input placeholder="example@progress.com"/>
                   <DialogActionsBar>
-                    <Button primary={true} onClick={this.handleShare}>Share</Button>
+                    <Button themeColor={'primary'} onClick={this.handleShare}>Share</Button>
                     <Button onClick={this.handleShare}>Cancel</Button>
                   </DialogActionsBar>
                 </Dialog>}

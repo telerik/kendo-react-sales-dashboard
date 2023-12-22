@@ -12,6 +12,7 @@ import {
     ChartTooltip
 } from '@progress/kendo-react-charts';
 
+import 'hammerjs';
 
 export const BarChartContainer = (props) => (
     <Chart style={{height:300}} zoomable={false}>
@@ -29,8 +30,8 @@ export const BarChartContainer = (props) => (
                     name={item.name}
                 />))}
         </ChartSeries>
-        <ChartValueAxis skip={2}>
-                <ChartValueAxisItem skip={2}/>
+        <ChartValueAxis>
+                <ChartValueAxisItem/>
         </ChartValueAxis>
     </Chart>
 );
