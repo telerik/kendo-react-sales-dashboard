@@ -12,6 +12,7 @@ import {
     ChartTooltip
 } from '@progress/kendo-react-charts';
 
+import 'hammerjs';
 
 export const BarChartContainer = (props) => (
     <Chart style={{height:300}} zoomable={false}>
